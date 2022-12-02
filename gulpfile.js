@@ -25,6 +25,10 @@ gulp.task("sass", function () {
     .pipe(connect.reload());
 });
 
+gulp.task("html", function () {
+  return gulp.src("./*.html").pipe(gulp.dest("./")).pipe(connect.reload());
+});
+
 // watch changes in scss files and run sass task
 gulp.task("sass:watch", function () {
   gulp.watch("./sass/**/*.scss", ["sass"]);
@@ -40,7 +44,10 @@ gulp.task("minify-js", function () {
     .pipe(connect.reload());
 });
 
-gulp.task("watch", gulp.parallel("sass", "minify-js"));
+gulp.task("watch", gulp.parallel("sass", "html", "minify-js"));
 
 // default task
-gulp.task("default", gulp.series("connect", "watch", "sass", "minify-js"));
+gulp.task(
+  "default",
+  gulp.series("connect", "watch", "html", "sass", "minify-js")
+);
