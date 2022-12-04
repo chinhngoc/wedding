@@ -580,12 +580,12 @@ function b64DecodeUnicode(str) {
 }
 
 // get param & decode
-var defaultText = "Text default để ở đây";
+var defaultText = "Bạn";
 var params = new URL(location).searchParams;
 if (params.get("p")) {
   var person = params.get("p");
   var decoded = b64DecodeUnicode(person);
-  var text = "Text có tên thì để ở đây " + decoded + " hoặc gì gì đó";
+  var text = decoded;
   $("#replace-me").text(text);
 } else {
   $("#replace-me").text(defaultText);
