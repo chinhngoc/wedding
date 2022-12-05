@@ -48,13 +48,13 @@
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
-                            <li><a href="#intro">How we met</a></li>
-                            <li><a href="#events">Events</a></li>
-                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
+                            <li><a href="#intro">Lời mời</a></li>
+                            <li><a href="#events">Chi tiết sự kiện</a></li>
+                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Một góc Hải Phòng</a></li>
                         </ul>
                         <ul class="member-actions">
-                            <li><a href="#map" class="login">Venue</a></li>
-                            <li><a href="#intro" class="btn-white btn-small">RSVP</a></li>
+                            <li><a href="#map" class="login">Địa điểm</a></li>
+                            <li><a href="#intro" class="btn-white btn-small">Đăng ký</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -69,7 +69,7 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="hero-content text-center">
                     <!--<h1>Ram and Antara</h1>-->
-                    <!-- <img src="img/Name.png"> -->
+                    <!-- <img src="img/CN256.png"> -->
                     <!--<p class="intro">Ram & Antara are getting hitched!</p>-->
                     <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
                 </div>
@@ -77,8 +77,8 @@
         </div>
         <div class="row">
             <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp"
-                                                           class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
+            <div class="col-sm-4 hidden-xs text-center"><a href="#intro"
+                                                           class="btn btn-accent btn-large rsvp-btn">Đăng ký</a></div>
             <div class="col-sm-4 hidden-xs"></div>
         </div>
     </div>
@@ -89,9 +89,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3>We are getting married</h3>
-                <p>The dates are the 24<sup>th</sup> of December 2022 (that's right it's Christmas) and we would like you to be a part of
-                    it.</p>
+                <h3>Chúng tớ chuẩn bị về chung một nhà!</h3>
+                <p>Nhân dịp chúng tớ (Chính và Ngọc) chuẩn bị về chung một nhà, bọn tớ có lời mời cho đến những người bạn thân thiết của bọn tớ!</p>
                 <!-- <div class="share-bar"></div> -->
             </div>
         </div>
@@ -102,7 +101,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="header">Thân Mời</h3>
+                <h1 class="header">Thân Mời</h1>
             </div>
         </div>
         <div class="row">
@@ -113,16 +112,15 @@
                 </p>
             </div> -->
             <div class="col-md-6">
-                
-                <h2 id="replace-me"></h2>
-                <p>Đến dự lễ thành hôn của chúng tớ vào tối ngày 24/12/2022!</p>
-                <p>Nếu bạn đến tham dự hãy điền thông tin vào form sau!</p>
+                <h1 id="replace-me"></h1>
+                <h4 class="text-center">Đến dự lễ thành hôn của chúng tớ vào tối ngày 24/12/2022!</h4>
+                <h4 class="text-center">Nếu bạn đến tham dự hãy điền thông tin vào form sau!</h4>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
                     
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-12 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-user"></i><input name="name" class=""
                                                                  placeholder="Họ và Tên"
@@ -131,7 +129,17 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-12 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-phone"></i><input type="number" name="phone" id="invite_code"
+                                                                class="" min="0"
+                                                                placeholder="Số điện thoại"
+                                                                required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-envelope"></i><input type="email" name="email" class=""
                                                                      placeholder="Email"
@@ -141,7 +149,7 @@
                         
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-12 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
                                                                   max="4"
@@ -149,12 +157,27 @@
                                                                   required>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
+                        <p>
+                            Bọn mình có sắp xếp xe 2 chiều Hà Nội - Hải Phòng cho mọi người, nếu mọi người cần đi chiều nào thì điền thông tin giúp bọn mình nhé để bọn mình sắp xếp!
+                        </p>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
-                                                                required>
+                                <i class="fa fa-arrow-up"></i><input name="hn-hp" list="choice" class="" placeholder="Chiều Hà Nội -> Hải Phòng">
+                                <datalist id="choice">
+                                    <option value="Có">
+                                    <option value="Không">
+                                </datalist> 
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-arrow-down"></i><input name="hp-hn" list="choice" class="" placeholder="Chiều Hải Phòng -> Hà Nội">
+                                <datalist id="choice">
+                                    <option value="Có">
+                                    <option value="Không">
+                                </datalist> 
                             </div>
                         </div>
                     </div>
@@ -162,8 +185,7 @@
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
                     <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
+                        Đúng vậy, đó chính là tôi!
                     </button>
                 </form>
             </div>
@@ -233,40 +255,11 @@
                     </button>
                     <h3 class="text-center section-padding">Ừm... Yêu cầu ăn mặc à?</h3>
                     <p>
-                        Mặc gì cũng được bạn nhé, thoải mái là được
+                        Mặc gì cũng được bạn nhé, thoải mái là được ^^! 
                     </p>
-                    <!-- <h5>Mehndi <span class="time">1PM - 5PM</span></h5>
                     <p>
-                        <strong>Ethnic indian wear</strong>
-                        <br>
-                        Ladies can wear something
-                        <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-women/">bright & vivid</a>
-                        and gentlemen can be on
-                        their <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-men/">vibrant
-                        kurtas</a> with pants or pyjamas along with an optional shawl.
+                        (đẹp hơn chú rể cũng được nhưng mà đừng đẹp hơn cô dâu haha)
                     </p>
-                    <h5>Cocktail Night <span class="time">7PM - 12AM</span></h5>
-                    <p>
-                        <strong>Western attire</strong>
-                        <br>
-                        A semi-formal look that is contemporary & fashionable which is not too prim & proper is the best
-                        to pull off this night. You can see some pins for
-                        <a href="https://www.pinterest.com/ramswarooppatra/cocktail-night-outfit-for-women/">ladies</a>
-                        & <a href="https://www.pinterest.com/ramswarooppatra/cocktail-night-outfit-for-men/">gents</a>.
-                    </p>
-                    <h5>Wedding <span class="time">6PM-12AM</span></h5>
-                    <p>
-                        <strong>Indo-western</strong>
-                        <br>
-                        Ladies can flaunt their unconventional sarees,
-                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-lehengas/">lehengas</a>,
-                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-anarkalis/">anarkalis</a>,
-                        dresses and the list
-                        goes on whereas gentlemen can wear any kind of suit or just blazer. If you don't like to wear a
-                        suit/blazer, you can do a <a
-                            href="https://www.pinterest.com/ramswarooppatra/high-neck-jackets-for-men/">high-neck
-                        (band gala) waistcoat & shirt</a> combo.
-                    </p> -->
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -287,7 +280,7 @@
 <section id="map" class="section-padding">
     <div class="text-center">
         <h3>Địa Điểm</h3>
-        <p>It's way easier than you think!</p>
+        <p>Hải Phòng thành phố hoa cải đỏ!</p>
     </div>
     <div id="map-canvas"></div>1
     <div id="map-content-wrapper" class="container pointer-events-none">
@@ -301,12 +294,12 @@
                 <div id="map-content" class="pointer-events-auto">
                     <div class="row">
                         <div class="col-md-6">
-                            <h5>ITC Fortune Park</h5>
-                            <p>Kona Expressway, Howrah, West Bengal 711403, India</p>
+                            <h5>HỘI TRƯỜNG APOLO</h5>
+                            <p>Tầng 2 Trung Tâm Tiệc Cưới Lạc Hồng (Parkson hoặc TD Plaza cũ)</p>
                         </div>
                         <div class="col-md-6">
-                            <h5>Mr. Amit Roy</h5>
-                            <p><i class="fa fa-mobile"></i> <a href="tel://+919412345678">+91 9412345678</a><br>
+                            <h5>Mr. Chính</h5>
+                            <p><i class="fa fa-mobile"></i> <a href="tel://+84818204188">+84 818204188</a><br>
                                 <i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a></p>
                         </div>
                     </div>

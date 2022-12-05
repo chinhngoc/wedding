@@ -368,7 +368,7 @@ section .header {
   padding-top: 40%;
 }
 .hero .hero-content img {
-  width: 55%;
+  width: 10%;
   margin-bottom: 12%;
 }
 .navigation {
@@ -403,7 +403,7 @@ header .logo {
   display: inline-block;
 }
 header .logo img {
-  height: 19px;
+  height: 50px;
 }
 header ul.primary-nav {
   margin: 0 0 0 75px;
@@ -414,6 +414,8 @@ header ul.primary-nav li {
 }
 header ul.primary-nav li a {
   color: #fff;
+  font-size: 20px;
+  text-shadow: 1px 1px 5px #000;
   padding-right: 25px;
 }
 header ul.primary-nav li a:hover {
@@ -427,6 +429,8 @@ header ul.member-actions li {
 }
 header ul.member-actions li a {
   color: #fff;
+  font-size: 20px;
+  text-shadow: 1px 1px 5px #000;
 }
 header ul.member-actions li a:hover {
   color: #e8ca6f;
@@ -822,6 +826,14 @@ header .member-actions {
   width: 100%;
   font-size: 13px;
 }
+
+a.rsvp-btn {
+  padding: 15px 0;
+  /* border-radius: 5px; */
+  width: 100%;
+  font-size: 20px;
+  text-shadow: 1px 1px 5px #000;
+}
 .rsvp-form .form-input-group {
   width: 100%;
   height: 55px;
@@ -850,7 +862,9 @@ header .member-actions {
 .rsvp-form .form-input-group i.fa-user,
 .rsvp-form .form-input-group i.fa-users,
 .rsvp-form .form-input-group i.fa-envelope,
-.rsvp-form .form-input-group .fa-key {
+.rsvp-form .form-input-group i.fa-phone,
+.rsvp-form .form-input-group i.fa-arrow-up,
+.rsvp-form .form-input-group i.fa-arrow-down {
   font-size: 14px;
   position: absolute;
   top: 50%;
