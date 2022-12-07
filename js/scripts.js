@@ -236,7 +236,7 @@ $(document).ready(function () {
 
       // Event Description
       description:
-        "Thân mời bạn đến dự lễ cưới của chúng tớ! Mọi vấn đề xin liên hệ Chính: +84 81 820 4188",
+        "Thân mời bạn đến dự lễ cưới của chúng tớ! Mọi vấn đề xin liên hệ Chính: (+84) 081 820 4188",
     },
   });
 
@@ -587,6 +587,7 @@ if (params.get("p")) {
   var decoded = b64DecodeUnicode(person);
   var text = decoded;
   $("#replace-me").text(text);
+  document.getElementsByName("name")[0].value=text;
 } else {
   $("#replace-me").text(defaultText);
 }
